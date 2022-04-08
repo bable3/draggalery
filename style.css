@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap');
+
+body {
+  margin: 0;
+  background: #474747;
+  font-family: 'Amiri', serif;
+}
+
+.grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200vw;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-item {
+  padding: 15px;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+canvas {
+  cursor: grab;
+}
+
+.gallery {
+  position: relative;
+}
+
+.title__container {
+  display: flex;
+  font-size: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  max-width: 50vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
